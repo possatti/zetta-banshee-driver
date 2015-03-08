@@ -12,13 +12,12 @@ BansheeScout.prototype.init = function(next) {
   var self = this;
 
   var query = this.server.where({type: 'banshee'});
-  var options = {default: 'DEFAULT'};
 
   this.server.find(query, function(err, results) {
     if (results[0]) {
-      self.provision(results[0], Banshee, options);
+      self.provision(results[0], Banshee);
     } else {
-      self.discover(Banshee, options);
+      self.discover(Banshee);
     }
   });
 
