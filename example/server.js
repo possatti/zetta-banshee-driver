@@ -1,8 +1,8 @@
 var zetta = require('zetta');
-var Starter = require('../index');
+var Banshee = require('../index');
 var app = require('./apps/starter');
 
 zetta()
-  .use(Starter)
+  .use(Banshee)
 //  .use(app)
   .listen(1337);
