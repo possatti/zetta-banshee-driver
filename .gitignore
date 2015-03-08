@@ -4,6 +4,7 @@ example/.registry/*
 example/.registry/medea.lock
 example/.peers/*
 example/.peers/medea.lock
+example/.devices/*
 .registry/*
 .registry/medea.lock
 .peers/*
